@@ -5,7 +5,7 @@
   "scripts": {
     "api": "set NODE_ENV=test && node node_modules\\@cucumber\\cucumber\\bin\\cucumber.js --profile api & node generateReport.js",
     "ui": "set NODE_ENV=test && node node_modules\\@cucumber\\cucumber\\bin\\cucumber.js --profile ui & node generateReport.js",
-    "p1": "set NODE_ENV=test && node node_modules\\@cucumber\\cucumber\\bin\\cucumber.js --profile p1 & node generateReport.js",
+    "p1": "set NODE_ENV=test && cucumber-js --profile p1 & node generateReport.js",
     "p2": "set NODE_ENV=test && node node_modules\\@cucumber\\cucumber\\bin\\cucumber.js --profile p2 & node generateReport.js"
   },
   "keywords": [],
