@@ -44,7 +44,7 @@ Before(async function (scenario) {
 
   if (!global.browser) {
     global.browser = await chromium.launch({
-      headless: false,
+      headless: true,
       slowMo: 500,
       args: ['--window-size=2560,1440'],
     });
