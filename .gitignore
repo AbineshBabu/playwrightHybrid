@@ -1,5 +1,10 @@
 
 # PlaywrightHybrid
 node_modules/
-reports/
-logs/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+/logs/
+/reports/

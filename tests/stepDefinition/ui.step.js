@@ -1,6 +1,6 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
 const { expect } = require('@playwright/test');
-const { pages } = require('../../Pages/page.config');
+const { pages } = require('../../Pages/page.config.js');
 
 Given('the user navigates to the home page of the application', async function () {
     await page.goto('/index.php');
