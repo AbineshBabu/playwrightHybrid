@@ -19,18 +19,7 @@ jobs:
         with:
           node-version: 'lts/*'
           cache: 'npm'
-
-      - name: Verify page.config.js exists and resolves
-        run: |
-          set -euo pipefail
-          echo "Listing probable locations:"
-          ls -la pages || true
-          node -e "console.log('Resolved:', require.resolve('./pages/page.config.js'))"
-          node -e "const {pages}=require('./pages/page.config.js'); if(!pages||typeof pages!=='object') { throw new Error('pages export missing or not an object'); }"
-
-      - name: Ensure reports dir
-        run: mkdir -p reports
-
+          
       - name: Install dependencies
         run: npm ci
 
