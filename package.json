@@ -1,0 +1,26 @@
+{
+  "name": "playwright-hybrid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "api": "set NODE_ENV=test && node node_modules\\@cucumber\\cucumber\\bin\\cucumber.js --profile api & node generateReport.js",
+    "ui": "set NODE_ENV=test && node node_modules\\@cucumber\\cucumber\\bin\\cucumber.js --profile ui & node generateReport.js",
+    "p1": "set NODE_ENV=test && node node_modules\\@cucumber\\cucumber\\bin\\cucumber.js --profile p1 & node generateReport.js",
+    "p2": "set NODE_ENV=test && node node_modules\\@cucumber\\cucumber\\bin\\cucumber.js --profile p2 & node generateReport.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "10.9.0",
+    "@playwright/test": "^1.55.0",
+    "open": "^10.2.0",
+    "strip-ansi": "^7.1.2"
+  },
+  "dependencies": {
+    "@cucumber/pretty-formatter": "^2.3.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "winston": "^3.18.3"
+  }
+}

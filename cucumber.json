@@ -1,0 +1,70 @@
+{
+    "p1": {
+        "formatOptions": {
+            "snippetInterface": "async-await"
+        },
+        "paths": [
+            "tests/feature"
+        ],
+        "dryRun": false,
+        "tags": "@P1",
+        "require": [
+            "tests/stepDefinition/*.js",
+            "config/cucumber.config.js"
+        ],
+        "format": [
+            "json:reports/cucumber_report.json"
+        ]
+    },
+    "p2": {
+        "formatOptions": {
+            "snippetInterface": "async-await"
+        },
+        "paths": [
+            "tests/feature"
+        ],
+        "dryRun": false,
+        "tags": "@P2",
+        "require": [
+            "tests/stepDefinition/*.js",
+            "config/cucumber.config.js"
+        ],
+        "format": [
+            "json:reports/cucumber_report.json"
+        ]
+    },
+    "api": {
+        "formatOptions": {
+            "snippetInterface": "async-await"
+        },
+        "paths": [
+            "tests/feature"
+        ],
+        "dryRun": false,
+        "tags": "@api",
+        "require": [
+            "tests/stepDefinition/*.js",
+            "config/cucumber.config.js"
+        ],
+        "format": [
+            "json:reports/cucumber_report.json"
+        ]
+    },
+    "ui": {
+        "formatOptions": {
+            "snippetInterface": "async-await"
+        },
+        "paths": [
+            "tests/feature"
+        ],
+        "dryRun": false,
+        "tags": "@ui",
+        "require": [
+            "tests/stepDefinition/*.js",
+            "config/cucumber.config.js"
+        ],
+        "format": [
+            "json:reports/cucumber_report.json"
+        ]
+    }
+}
