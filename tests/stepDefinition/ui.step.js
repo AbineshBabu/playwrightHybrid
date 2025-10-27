@@ -7,7 +7,7 @@ Given('the user navigates to the home page of the application', async function (
 
     console.log("user navigated to home page");
     await pages.homePage().page.waitForTimeout(2000);
-
+    
 });
 
 Then('the user clicks on the {string} button', async function (value) {
